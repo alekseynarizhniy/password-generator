@@ -1,0 +1,48 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+:host p{
+    text-align: center;
+}
+
+.example-card {
+  max-width: 400px;
+  padding: 15px;
+}
+
+.example-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+mat-card-content {
+    padding: 0 !important;  
+}
+
+mat-card-content button{
+    width: 100%;  
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+}
+
+.result input{
+    margin-bottom: 15px;
+}
+
+@media (max-height: 550px) {
+    .example-card {
+        flex-direction: row;
+        max-width: max-content;
+    }
+
+    .example-card * {
+        margin-right: 10px;
+    }
+}
